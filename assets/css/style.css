@@ -139,10 +139,10 @@ section {
 }
 
 .img {
-    height: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     width: 49%;
+    padding-top: 70px;
 }
