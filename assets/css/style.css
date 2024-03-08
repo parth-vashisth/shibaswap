@@ -34,12 +34,10 @@ section {
 }
 
 .buy {
-    /* width: 660px; */
-    /* height: 61px; */
     font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
-
+    width: 100%;
     text-align: left;
     color: white;
     padding-top: 40px;
@@ -48,32 +46,26 @@ section {
 }
 
 .urna {
-    width: 450px;
-    height: 128px;
+    width: 100%;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
     color: white;
     opacity: 70%;
-    margin-bottom: 20px;
-
 }
 
 .cras {
-    width: 200px;
-    height: 25px;
     font-family: Poppins;
     font-size: 17px;
     font-weight: 500;
     text-align: left;
     color: white;
-
 }
 
 .amet {
-    width: 280px;
-    height: 20px;
+   /* min-width: 280px; */
+    /* height: 20px; */
     font-family: Poppins;
     font-size: 12px;
     font-weight: 300;
@@ -82,12 +74,9 @@ section {
 
 }
 
-.m-t10 {
-    margin-top: 3px;
-}
 
 .none {
-    margin-top: 20px;
+    padding-left: 10px;
 }
 
 .list {
@@ -113,8 +102,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 12px;
-    margin-top: 15px;
 }
 
 .box {
@@ -122,10 +109,12 @@ section {
     border-radius: 50px;
     border: #151313 none;
     margin-top: 20px;
-    justify-content: center;
     display: flex;
-    padding-bottom: 10px;
-    width: 400px;
+    max-width: 400px;
+    min-height: 70px;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: left;
 }
 
 .box:hover {
@@ -139,11 +128,32 @@ section {
 }
 
 .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 49%;
-    padding-top: 70px;
-    height:600px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (min-width:992px) {
+    .col-lg-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 49%;
+        padding-top: 70px;
+        
+    }
+
 }
